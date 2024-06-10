@@ -1,11 +1,14 @@
 local lush = require("lush")
 
 ---
--- INFO: The following are the colors from the palette divided into categories
+-- INFO: Palette is named c to keep it short and easy to type.
 ---@type table<string, table>
 ---
-local palette = require("sonokai.palette")
-local c = palette.c -- colors
+local c = require("ponokai.palette")
+
+local function tame(colour)
+	return colour.darken(10).desaturate(40)
+end
 
 ---@diagnostic disable
 local theme = lush(function(injected_functions)
@@ -59,7 +62,7 @@ local theme = lush(function(injected_functions)
 		--
 		-- Editor
 		--
-		CursorLine({ bg = c.bg.lighten(5) }),
+		CursorLine({ bg = c.bg_500 }),
 		CursorColumn({ bg = c.bg_500 }),
 		ColorColumn({ bg = c.bg_500 }),
 		Conceal({ fg = c.green }),

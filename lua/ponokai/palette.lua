@@ -1,7 +1,7 @@
 local lush = require("lush")
 local hsl = lush.hsl
 
-local c = {
+local palette = {
 	-- Base colors
 	black = hsl(226, 14, 10),
 	bg = hsl(213, 14, 20),
@@ -91,6 +91,4 @@ local c = {
 	line_deleted = hsl(348, 75, 60),
 }
 
-return {
-	c = c,
-}
+return palette

@@ -1,46 +1,18 @@
 local palette = require("ponokai.palette")
 
-local colours = {
-	black = palette.bg0_hex,
-	green = palette.green_hex,
-	blue = palette.blue_hex,
-	purple = palette.purple_hex,
-	yellow = palette.yellow_hex,
-	orange = palette.orange_hex,
-	grey = palette.grey_hex,
-	darkgrey = palette.grey_dim_hex,
-	deep_grey = palette.bg4_hex,
-}
+local function set_current_theme(mode_color)
+	return {
+		a = { bg = mode_color, fg = palette.bg0_hex, gui = "bold" },
+		b = { bg = palette.bg2_hex, fg = mode_color },
+		c = { bg = palette.bg4_hex, fg = palette.grey_hex },
+	}
+end
 
 return {
-	normal = {
-		a = { bg = colours.blue, fg = colours.black, gui = "bold" },
-		b = { bg = colours.deep_grey, fg = colours.yellow },
-		c = { bg = colours.darkgrey, fg = colours.grey },
-	},
-	insert = {
-		a = { bg = colours.green, fg = colours.black, gui = "bold" },
-		b = { bg = colours.deep_grey, fg = colours.yellow },
-		c = { bg = colours.darkgrey, fg = colours.grey },
-	},
-	visual = {
-		a = { bg = colours.purple, fg = colours.black, gui = "bold" },
-		b = { bg = colours.deep_grey, fg = colours.yellow },
-		c = { bg = colours.darkgrey, fg = colours.grey },
-	},
-	replace = {
-		a = { bg = colours.orange, fg = colours.black, gui = "bold" },
-		b = { bg = colours.deep_grey, fg = colours.yellow },
-		c = { bg = colours.darkgrey, fg = colours.grey },
-	},
-	command = {
-		a = { bg = colours.yellow, fg = colours.black, gui = "bold" },
-		b = { bg = colours.deep_grey, fg = colours.yellow },
-		c = { bg = colours.darkgrey, fg = colours.grey },
-	},
-	inactive = {
-		a = { bg = colours.darkgrey, fg = colours.grey, gui = "bold" },
-		b = { bg = colours.darkgrey, fg = colours.grey },
-		c = { bg = colours.darkgrey, fg = colours.grey },
-	},
+	normal = set_current_theme(palette.blue_hex),
+	insert = set_current_theme(palette.green_hex),
+	visual = set_current_theme(palette.yellow_hex),
+	replace = set_current_theme(palette.purple_hex),
+	command = set_current_theme(palette.orange_hex),
+	inactive = set_current_theme(palette.red_hex),
 }

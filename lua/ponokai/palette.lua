@@ -104,7 +104,6 @@ local palette = {
 	blue_hex = "#98d4e7",
 	purple_hex = "#bdb2ff",
 	grey_hex = "#c4c6cf",
-	grey_dim_hex = "#9da1af",
 }
 
 return palette

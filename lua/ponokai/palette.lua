@@ -89,6 +89,22 @@ local palette = {
 	line_added = hsl(104, 65, 75),
 	line_changed = hsl(196, 85, 70),
 	line_deleted = hsl(348, 75, 60),
+
+	-- Lualine, has to be in hex
+	bg0_hex = "#2b2d3a",
+	bg1_hex = "#333648",
+	bg2_hex = "#363a4e",
+	bg3_hex = "#393e53",
+	bg4_hex = "#3f445b",
+	fg_hex = "#f2f2f3",
+	red_hex = "#ff8c9a",
+	orange_hex = "#f3bb9a",
+	yellow_hex = "#f8e7b0",
+	green_hex = "#b4e49a",
+	blue_hex = "#98d4e7",
+	purple_hex = "#bdb2ff",
+	grey_hex = "#c4c6cf",
+	grey_dim_hex = "#9da1af",
 }
 
 return palette

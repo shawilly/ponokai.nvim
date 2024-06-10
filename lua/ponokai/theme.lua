@@ -62,7 +62,7 @@ local theme = lush(function(injected_functions)
 		--
 		-- Editor
 		--
-		CursorLine({ bg = c.bg_500 }),
+		CursorLine({ bg = tame(c.bg) }),
 		CursorColumn({ bg = c.bg_500 }),
 		ColorColumn({ bg = c.bg_500 }),
 		Conceal({ fg = c.green }),
@@ -129,10 +129,10 @@ local theme = lush(function(injected_functions)
 		Comment({ fg = c.grey }),
 
 		Constant({ fg = c.fg, gui = "bold" }),
-		String({ fg = c.yellow }),
 		Character({ Constant }),
+		String({ fg = c.yellow }),
 		Number({ fg = c.purple, gui = "italic" }),
-		Boolean({ Constant }),
+		Boolean({ fg = c.blue }),
 		Float({ Number }),
 
 		Identifier({ fg = c.red }),
@@ -229,7 +229,7 @@ local theme = lush(function(injected_functions)
 		-- Identifiers
 		sym("@variable")({ fg = c.fg }), -- various variable names
 		sym("@variable.builtin")({ fg = c.purple_100, gui = "italic" }), -- built-in variable names (e.g. `this`)
-		sym("@variable.parameter")({ fg = c.fg }), -- parameters of a function, use a conspicuous color (VSCode uses the common c.blue_100)
+		sym("@variable.parameter")({ fg = c.orange }), -- parameters of a function, use a conspicuous color (VSCode uses the common c.blue_100)
 		sym("@variable.parameter.builtin")({ sym("@variable.parameter") }), -- special parameters (e.g. `_`, `it`)
 		sym("@variable.member")({ fg = c.orange }), -- object and struct fields
 
@@ -244,7 +244,7 @@ local theme = lush(function(injected_functions)
 		-- Literals
 		sym("@string")({ String }), -- string literals
 		sym("@string.documentation")({ fg = c.brown }), -- string documenting code (e.g. Python docstrings)
-		sym("@string.regexp")({ fg = c.red_900 }), -- regular expressions
+		sym("@string.regexp")({ fg = c.pink }), -- regular expressions
 		sym("@string.escape")({ fg = c.orange }), -- escape sequences
 		sym("@string.special")({ SpecialChar }), -- other special strings (e.g. dates)
 		sym("@string.special.symbol")({ sym("@string.special") }), -- symbols or atoms
@@ -301,7 +301,7 @@ local theme = lush(function(injected_functions)
 		-- Punctuation
 		sym("@punctuation.delimiter")({ fg = c.fg }), -- delimiters (e.g. `;` / `.` / `,`)
 		sym("@punctuation.bracket")({ fg = c.fg }), -- brackets (e.g. `()` / `{}` / `[]`)
-		sym("@punctuation.special")({ fg = c.orange_500 }), -- special symbols (e.g. `{}` in string interpolation)
+		sym("@punctuation.special")({ fg = c.purple }), -- special symbols (e.g. `{}` in string interpolation)
 
 		-- Comments
 		sym("@comment")({ Comment }), -- line and block comments

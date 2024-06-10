@@ -1,14 +1,14 @@
-local palette = require("teaspoon.palette")
+local palette = require("ponokai.palette")
 
 local colours = {
-	black = palette.black.hex,
-	green = palette.green.hex,
-	blue = palette.blue.hex,
-	pink = palette.pink.hex,
-	yellow = palette.yellow.hex,
-	gray = palette.grey.hex,
-	darkgrey = palette.darkgrey.hex,
-	deep_grey = palette.deep_grey.hex,
+	black = palette.bg0_hex,
+	green = palette.green_hex,
+	blue = palette.blue,
+	purple = palette.purple_hex,
+	yellow = palette.yellow_hex,
+	gray = palette.grey_hex,
+	darkgrey = palette.grey_dim_hex,
+	deep_grey = palette.bg4_hex,
 }
 
 return {
@@ -23,7 +23,7 @@ return {
 		c = { bg = colours.darkgrey, fg = colours.grey },
 	},
 	visual = {
-		a = { bg = colours.pink, fg = colours.black, gui = "bold" },
+		a = { bg = colours.purple, fg = colours.black, gui = "bold" },
 		b = { bg = colours.deep_grey, fg = colours.yellow },
 		c = { bg = colours.darkgrey, fg = colours.grey },
 	},

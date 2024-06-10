@@ -6,7 +6,7 @@ local colours = {
 	blue = palette.blue,
 	purple = palette.purple_hex,
 	yellow = palette.yellow_hex,
-	gray = palette.grey_hex,
+	grey = palette.grey_hex,
 	darkgrey = palette.grey_dim_hex,
 	deep_grey = palette.bg4_hex,
 }

@@ -1,9 +1,6 @@
 local lush = require("lush")
 
----
--- INFO: Palette is named c to keep it short and easy to type.
 ---@type table<string, table>
----
 local c = require("ponokai.palette")
 
 local function tame(colour)

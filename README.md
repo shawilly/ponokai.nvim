@@ -6,6 +6,8 @@
 </p>
 
 <div align="center">
+<h1>still in beta, you can use the vim version of ponokai here
+https://github.com/shawilly/ponokai</h1>
  <br>
  <a href="https://github.com/shawilly/ponokai.nvim">
   <img src="logo.svg" width="800" height="400" alt="Click to see the source">

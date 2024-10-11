@@ -1,11 +1,18 @@
+<p align="center">
+  <a href="https://github.com/shawilly/ponokai.nvim/stargazers"><img src="https://img.shields.io/github/stars/shawilly/ponokai.nvim?colorA=192330&colorB=f8e7b0&style=for-the-badge"></a>
+  <a href="https://github.com/shawilly/ponokai.nvim/issues"><img src="https://img.shields.io/github/issues/shawilly/ponokai.nvim?colorA=192330&colorB=98d4e7&style=for-the-badge"></a>
+  <a href="https://github.com/shawilly/ponokai.nvim/contributors"><img src="https://img.shields.io/github/contributors/shawilly/ponokai.nvim?colorA=192330&colorB=b4e49a&style=for-the-badge"></a>
+  <a href="https://github.com/shawilly/ponokai.nvim/network/members"><img src="https://img.shields.io/github/forks/shawilly/ponokai.nvim?colorA=192330&colorB=bdb2ff&style=for-the-badge"></a>
+</p>
+
 <div align="center">
-    <div class="b-header">
-        <a class="active" href="https://github.com/loctvl842/monokai-pro.nvim">
-            <img width="484" alt="img_v3_0274_94b96554-6c31-431b-a95e-2de719b493hu" src="https://github.com/loctvl842/monokai-pro.nvim/assets/80513079/24a697cf-0bae-4bde-a059-909ca665c333">
-            <h1>Monokai Pro</h1>
-            <h2>Beautiful functionality for professional developers</h2>
-        </a>
-    </div>
+<h1>still in beta, you can use the vim version of ponokai here
+https://github.com/shawilly/ponokai</h1>
+ <br>
+ <a href="https://github.com/shawilly/ponokai.nvim">
+  <img src="logo.svg" width="800" height="400" alt="Click to see the source">
+ </a>
+ <br>
 </div>
 
 Find out more here [monokai.pro](https://monokai.pro/)

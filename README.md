@@ -42,7 +42,7 @@ Find out more here [ponokai.pro](https://ponokai.pro/)
 - [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [which-key.nvim](https://github.com/folke/which-key.nvim)
-- [breadcrumb.nvim](https://github.com/loctvl842/breadcrumb.nvim)
+- [breadcrumb.nvim](https://github.com/shawilly/breadcrumb.nvim)
 - [nvim-navic](https://github.com/SmiteshP/nvim-navic)
 - [wilder.nvim](https://github.com/gelguy/wilder.nvim)
 - [Lightline](https://github.com/itchyny/lightline.vim)
@@ -57,14 +57,14 @@ Find out more here [ponokai.pro](https://ponokai.pro/)
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'loctvl842/ponokai-pro.nvim'
+Plug 'shawilly/ponokai-pro.nvim'
 ```
 
 [packer](https://github.com/wbthomason/packer.nvim)
 
 ```lua
 use {
-  "loctvl842/ponokai-pro.nvim",
+  "shawilly/ponokai-pro.nvim",
   config = function()
     require("ponokai-pro").setup()
   end
@@ -134,7 +134,7 @@ require("ponokai-pro").setup({
 })
 ```
 
-- Check my [nvim](https://github.com/loctvl842/nvim) to see my plugins setup for `border` if you want to set `background_clear`
+- Check my [nvim](https://github.com/shawilly/nvim) to see my plugins setup for `border` if you want to set `background_clear`
 
 For example:
 

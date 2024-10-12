@@ -15,33 +15,17 @@ https://github.com/shawilly/ponokai</h1>
  <br>
 </div>
 
-Find out more here [monokai.pro](https://monokai.pro/)
+Find out more here [ponokai.pro](https://ponokai.pro/)
 
-![monokai-pro-macbook](https://user-images.githubusercontent.com/80513079/218453999-87c957f1-658d-49a6-bf67-291d3e46fa9a.png)
+![ponokai-pro-macbook](https://user-images.githubusercontent.com/80513079/218453999-87c957f1-658d-49a6-bf67-291d3e46fa9a.png)
 
 ## ⭐ Pro
 
 ![pro](https://user-images.githubusercontent.com/80513079/209659184-ed5a28c3-cb7f-4de7-8f7c-5d206dc11540.png)
 
-## 🛑 Octagon
+## 🐈 Kitty
 
-![octagon](https://user-images.githubusercontent.com/80513079/209659175-97db9a95-edd0-4b6e-8087-7fb1aee45c52.png)
-
-## 🤖 Machine
-
-![machine](https://user-images.githubusercontent.com/80513079/209659194-d9fe09f5-ea35-4130-b2e8-d854b7b6fb72.png)
-
-## ☕ Ristretto
-
-![ristretto](https://user-images.githubusercontent.com/80513079/209659205-90200c24-d302-4b70-811a-36e6e7845f6b.png)
-
-## 🌈 Spectrum
-
-![spectrum](https://user-images.githubusercontent.com/80513079/209659126-9df0d401-020f-4b0c-963d-5a930d0a6974.png)
-
-## 👴 Classic
-
-![classic](https://user-images.githubusercontent.com/80513079/209659153-9362a05f-2b7f-4b36-acf1-d13bef6a9118.png)
+![kitty](https://user-images.githubusercontent.com/80513079/209659153-9362a05f-2b7f-4b36-acf1-d13bef6a9118.png)
 
 ### 🔌 Plugin support
 
@@ -73,16 +57,16 @@ Find out more here [monokai.pro](https://monokai.pro/)
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'loctvl842/monokai-pro.nvim'
+Plug 'loctvl842/ponokai-pro.nvim'
 ```
 
 [packer](https://github.com/wbthomason/packer.nvim)
 
 ```lua
 use {
-  "loctvl842/monokai-pro.nvim",
+  "loctvl842/ponokai-pro.nvim",
   config = function()
-    require("monokai-pro").setup()
+    require("ponokai-pro").setup()
   end
 }
 ```
@@ -91,17 +75,13 @@ use {
 
 There are several themes included in this plugin.
 
-- [Pro](#-pro) – Monokai Pro _(default)_
-- [Octagon](#-octagon) – Monokai Pro (Filter Octagon)
-- [Machine](#-machine) – Monokai Pro (Filter Machine)
-- [Ristretto](#-ristretto) – Monokai Pro (Filter Machine)
-- [Spectrum](#-spectrum) – Monokai Pro (Filter Machine)
-- [Classic](#-classic) – Monokai Classic
+- [Pro](#-pro) – Ponokai Pro _(default)_
+- [Kitty](#-kitty) – Ponokai Kitty
 
 Example configuration:
 
 ```lua
-require("monokai-pro").setup({
+require("ponokai-pro").setup({
   transparent_background = false,
   terminal_colors = true,
   devicons = true, -- highlight the icons of `nvim-web-devicons`
@@ -115,12 +95,12 @@ require("monokai-pro").setup({
     annotation = { italic = true },
     tag_attribute = { italic = true }, -- attribute of tag in reactjs
   },
-  filter = "pro", -- classic | octagon | pro | machine | ristretto | spectrum
+  filter = "pro", -- pro | kitty
   -- Enable this will disable filter option
   day_night = {
     enable = false, -- turn off by default
-    day_filter = "pro", -- classic | octagon | pro | machine | ristretto | spectrum
-    night_filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
+    day_filter = "pro", -- pro | kitty
+    night_filter = "kitty", -- pro | kitty
   },
   inc_search = "background", -- underline | background
   background_clear = {
@@ -148,9 +128,9 @@ require("monokai-pro").setup({
   override = function(c) end,
   ---@param cs Colorscheme
   ---@param p ColorschemeOptions
-  ---@param Config MonokaiProOptions
+  ---@param Config PonokaiProOptions
   ---@param hp Helper
-  override = function(cs: Colorscheme, p: ColorschemeOptions, Config: MonokaiProOptions, hp: Helper) end,
+  override = function(cs: Colorscheme, p: ColorschemeOptions, Config: PonokaiProOptions, hp: Helper) end,
 })
 ```
 
@@ -162,7 +142,7 @@ For example:
   <summary>float_win</summary>
 
 ```lua
-require("monokai-pro").setup({
+require("ponokai-pro").setup({
     -- ... your config
     background_clear = { "float_win" }
     -- ... your config
@@ -192,7 +172,7 @@ require("cmp").setup({
   <summary>Telescope</summary>
 
 ```lua
-require("monokai-pro").setup({
+require("ponokai-pro").setup({
     -- ... your config
     background_clear = {}
     -- ... your config
@@ -222,51 +202,51 @@ require("telescope").setup({
 
 ```vim
 " Vim Script
-colorscheme monokai-pro
+colorscheme ponokai-pro
 ```
 
 ```lua
-require("monokai-pro").setup({
+require("ponokai-pro").setup({
   -- ... your config
 })
 -- lua
-vim.cmd([[colorscheme monokai-pro]])
+vim.cmd([[colorscheme ponokai-pro]])
 ```
 
-- To enable `monokai-pro` for `Lualine`:
+- To enable `ponokai-pro` for `Lualine`:
 
 ```lua
 require('lualine').setup {
   options = {
     -- ...
-    theme = 'monokai-pro'
+    theme = 'ponokai-pro'
     -- ...
   }
 }
 ```
 
-- To enable `monokai-pro` for `barbecue`:
+- To enable `ponokai-pro` for `barbecue`:
 
 ```lua
 require('barbecue').setup {
   -- ...
-  theme = 'monokai-pro'
+  theme = 'ponokai-pro'
   -- ...
 }
 
 ```
 
-- To enable `monokai-pro` for `lightline`:
+- To enable `ponokai-pro` for `lightline`:
 
 ```vim
 " Vim Script
-let g:lightline = {'colorscheme': 'monokaipro'}
+let g:lightline = {'colorscheme': 'ponokaipro'}
 ```
 
 - Override function for customizing the final color scheme:
 
 ```lua
-require("monokai-pro").setup({
+require("ponokai-pro").setup({
     -- ...
     override = function()
       return {
@@ -282,9 +262,9 @@ require("monokai-pro").setup({
 This is a sample config to use `Tokyonight` as the palette:
 
 ```lua
-require("monokai-pro").setup({
+require("ponokai-pro").setup({
     -- ...
-    --- @param filter "classic" | "machine" | "octagon" | "pro" | "ristretto" | "spectrum"
+    --- @param filter "pro" | "kitty"
     override = function(c)
       return {
         IndentBlanklineChar = { fg = c.base.dimmed4 },
@@ -296,12 +276,12 @@ require("monokai-pro").setup({
         dark1 = "#16161E",
         background = "#1A1B26",
         text = "#C0CAF5",
-        accent1 = "#f7768e",
-        accent2 = "#7aa2f7",
-        accent3 = "#e0af68",
-        accent4 = "#9ece6a",
-        accent5 = "#0DB9D7",
-        accent6 = "#9d7cd8",
+        red = "#f7768e",
+        orange = "#7aa2f7",
+        yellow = "#e0af68",
+        green = "#9ece6a",
+        blue = "#0DB9D7",
+        purple = "#9d7cd8",
         dimmed1 = "#737aa2",
         dimmed2 = "#787c99",
         dimmed3 = "#363b54",
@@ -318,7 +298,7 @@ require("monokai-pro").setup({
 This is a sample config to use a darker background for almost all supported plugins:
 
 ```lua
-require("monokai-pro").setup({
+require("ponokai-pro").setup({
     -- ...
     overrideScheme = function(cs, p, config, hp)
       local cs_override = {}
@@ -335,6 +315,6 @@ require("monokai-pro").setup({
 
 ## 🔧 Command
 
-- run command `MonokaiProSelect` to launch a menu to choose theme filter (required: [nui.nvim](https://github.com/MunifTanjim/nui.nvim))
-- or we can run command `MonokaiPro` with parameter to change theme filter: For example:
-  > `MonokaiPro classic`
+- run command `PonokaiProSelect` to launch a menu to choose theme filter (required: [nui.nvim](https://github.com/MunifTanjim/nui.nvim))
+- or we can run command `PonokaiPro` with parameter to change theme filter: For example:
+  > `PonokaiPro classic`

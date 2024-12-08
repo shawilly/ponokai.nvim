@@ -13,7 +13,7 @@ M.normal = {
     { colors.base.yellow, colors.editorSuggestWidget.background },
   },
   error = { { colors.base.black, colors.base.red } },
-  warning = { { colors.base.black, colors.base.blue } },
+  warning = { { colors.base.black, colors.base.orange } },
 }
 
 M.insert = {

@@ -30,8 +30,8 @@ M.setup = function(c, config, _)
     StorageClass = { fg = c.base.red, italic = styles.type.italic }, -- static, register, volatile, etc
     Structure = { fg = c.base.cyan, italic = styles.type.italic }, -- struct, union, enum, etc
     Typedef = { fg = c.base.red }, -- A typedef
-    Special = { fg = c.base.blue }, -- (preferred) any special symbol
-    SpecialChar = { fg = c.base.blue }, -- special character in a constant
+    Special = { fg = c.base.orange }, -- (preferred) any special symbol
+    SpecialChar = { fg = c.base.orange }, -- special character in a constant
     -- Tag = {}, -- you can use CTRL-] on this
     Delimiter = { fg = c.base.white }, -- character that needs attention
     SpecialComment = { fg = c.base.dimmed3 }, -- special things inside a comment

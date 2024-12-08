@@ -7,7 +7,7 @@ M.setup = function(c, config, hp)
   local float_winBackgroundClear = vim.tbl_contains(config.background_clear, "float_win")
   return {
     ColorColumn = {
-      bg = c.base.dimmed5
+      bg = c.base.dimmed5,
     }, -- used for the columns set with 'colorcolumn'
     Conceal = { bg = c.editor.background, fg = c.base.dimmed3 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor = {
@@ -183,7 +183,7 @@ M.setup = function(c, config, hp)
     TablineFill = { link = "BufferLineFill" }, -- tab pages line, where there are no labels
     TablineSel = { link = "BufferLineBufferSelected" }, -- tab pages line, active tab page label
     Title = {
-      fg = c.base.yellow,
+      fg = c.base.green,
       bold = true,
     }, -- titles for output from ":set all", ":autocmd"
     Visual = {
@@ -219,7 +219,7 @@ M.setup = function(c, config, hp)
     -- Neovim
     healthError = { fg = c.base.red },
     healthSuccess = { fg = c.base.green },
-    healthWarning = { fg = c.base.blue },
+    healthWarning = { fg = c.base.orange },
   }
 end
 

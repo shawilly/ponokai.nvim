@@ -24,7 +24,7 @@ function M.get(c, config, _)
     ["@method.call"] = { fg = c.base.green },
     ["@number"] = { fg = c.base.magenta },
     ["@operator"] = { fg = c.base.red }, -- `=`, `=>`
-    ["@parameter"] = { fg = c.base.blue, italic = styles.parameter.italic },
+    ["@parameter"] = { fg = c.base.orange, italic = styles.parameter.italic },
     ["@property"] = { fg = c.base.white },
     ["@punctuation.bracket"] = { fg = c.base.red }, -- `(`
     ["@punctuation.delimiter"] = { fg = c.base.dimmed2 }, -- `;`
@@ -41,20 +41,20 @@ function M.get(c, config, _)
     ["@variable"] = { fg = c.base.white },
     ["@variable.builtin"] = { fg = c.base.dimmed1, italic = true },
     ["@variable.member"] = { fg = c.base.magenta }, -- class members
-    ["@variable.parameter"] = { fg = c.base.blue, italic = true },
+    ["@variable.parameter"] = { fg = c.base.orange, italic = true },
     ["@_isinstance"] = { fg = c.base.green },
     -- scss
     ["@keyword.scss"] = { fg = c.base.red },
     ["@function.scss"] = { fg = c.base.cyan },
     ["@property.scss"] = { fg = c.base.green },
-    ["@string.scss"] = { fg = c.base.blue, italic = true },
+    ["@string.scss"] = { fg = c.base.orange, italic = true },
     ["@number.scss"] = { fg = c.base.magenta },
     ["@type.scss"] = { fg = c.base.cyan },
     -- cpp
     ["@keyword.cpp"] = { fg = c.base.cyan, italic = styles.keyword.italic },
     ["@namespace.cpp"] = { fg = c.base.green },
     ["@operator.cpp"] = { fg = c.base.red },
-    ["@type.cpp"] = { fg = c.base.blue, italic = styles.type.italic },
+    ["@type.cpp"] = { fg = c.base.orange, italic = styles.type.italic },
     ["@variable.cpp"] = { fg = c.base.white },
     ["@constant.cpp"] = { fg = c.base.cyan },
     ["@constant.macro.cpp"] = { fg = c.base.red },
@@ -70,17 +70,17 @@ function M.get(c, config, _)
     ["@attribute.python"] = { fg = c.base.green },
     ["@variable.builtin.python"] = { fg = c.editorSuggestWidget.foreground, italic = true },
     ["@variable.python"] = { fg = c.base.white },
-    ["@variable.parameter.python"] = { fg = c.base.blue, italic = true },
+    ["@variable.parameter.python"] = { fg = c.base.orange, italic = true },
     ["@variable.member.python"] = { fg = c.base.cyan }, -- Python attributes, self.__class__.__name__
     ["@field.python"] = { fg = c.base.white },
-    ["@varibale.builtin.python"] = { fg = c.base.blue, italic = true },
+    ["@varibale.builtin.python"] = { fg = c.base.orange, italic = true },
     ["@constructor.python"] = { fg = c.base.green },
     ["@method.python"] = { fg = c.base.green },
     ["@function.builtin.python"] = { fg = c.base.cyan, italic = true },
     ["@exception.python"] = { fg = c.base.red, italic = true },
     ["@constant.python"] = { fg = c.base.magenta },
     ["@operator.python"] = { fg = c.base.red },
-    ["@parameter.python"] = { fg = c.base.blue, italic = true },
+    ["@parameter.python"] = { fg = c.base.orange, italic = true },
     ["@string.escape.python"] = { fg = c.base.magenta },
     -- lua
     ["@variable.lua"] = { fg = c.base.white },
@@ -91,10 +91,10 @@ function M.get(c, config, _)
     ["@conditional.lua"] = { fg = c.base.red },
     ["@namespace.lua"] = { fg = c.base.red },
     ["@comment.documentation.lua"] = { fg = c.base.cyan },
-    ["@parameter.lua"] = { fg = c.base.blue, italic = true },
+    ["@parameter.lua"] = { fg = c.base.orange, italic = true },
     -- latex
     ["@text.environment.latex"] = { fg = c.base.green },
-    ["@text.environment.name.latex"] = { fg = c.base.blue, italic = true },
+    ["@text.environment.name.latex"] = { fg = c.base.orange, italic = true },
     ["@punctuation.special.latex"] = { fg = c.base.red },
     ["@text.math.latex"] = { fg = c.base.magenta },
     ["@text.strong.latex"] = { bold = true },

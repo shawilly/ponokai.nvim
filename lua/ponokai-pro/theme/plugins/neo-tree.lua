@@ -32,7 +32,7 @@ function M.get(c, config, _)
       fg = isBackgroundClear and c.base.black or c.editor.background,
     },
     NeoTreeRootName = {
-      -- bg = C.sideBarSectionHeader.background,
+      -- bg = c.sideBarSectionHeader.background,
       fg = c.sideBarSectionHeader.foreground,
       bold = true,
     },
@@ -58,7 +58,7 @@ function M.get(c, config, _)
     },
     NeoTreeTitleBar = {
       bg = sidebar_bg,
-      fg = c.base.yellow,
+      fg = c.base.green,
       bold = true,
     },
     NeoTreeFloatTitle = {

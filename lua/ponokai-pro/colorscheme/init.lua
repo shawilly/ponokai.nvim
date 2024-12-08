@@ -57,7 +57,7 @@ M.get = function(filter)
 
   cs.editorLineNumber = {
     foreground = colors.dimmed3,
-    activeForeground = colors.orange,
+    activeForeground = colors.yellow,
   }
 
   cs.editorHoverWidget = {
@@ -90,8 +90,8 @@ M.get = function(filter)
   }
 
   cs.sideBar = {
-    background = colors.dark1,
-    foreground = colors.dimmed2,
+    background = colors.background,
+    foreground = colors.text,
   }
 
   cs.sideBarTitle = {
@@ -103,8 +103,7 @@ M.get = function(filter)
   }
 
   cs.sideBarSectionHeader = {
-    background = colors.dark1,
-    foreground = colors.dimmed1,
+    foreground = colors.red,
   }
 
   cs.breadcrumb = {
@@ -122,28 +121,18 @@ M.get = function(filter)
     hoverBackground = hp.blend(colors.dimmed1, 0.15, colors.background),
   }
 
-  cs.gitDecoration = {
-    addedResourceForeground = colors.git.line_added,
-    conflictingResourceForeground = colors.git.modified,
-    deletedResourceForeground = colors.git.line_deleted,
-    ignoredResourceForeground = colors.dimmed4,
-    modifiedResourceForeground = colors.yellow,
-    stageDeletedResourceForeground = colors.red,
-    stageModifiedResourceForeground = colors.yellow,
-    untrackedResourceForeground = colors.dimmed2,
-  }
-
+  cs.gitDecoration = colors.git
   cs.inputValidation = colors.diagnostics
 
   cs.errorLens = {
-    errorBackground = hp.blend(colors.red, 0.1),
-    errorForeground = colors.red,
-    warningBackground = hp.blend(colors.orange, 0.1),
-    warningForeground = colors.orange,
-    infoBackground = hp.blend(colors.blue, 0.1),
-    infoForeground = colors.blue,
-    hintBackground = hp.blend(colors.blue, 0.1),
-    hintForeground = colors.blue,
+    errorBackground = colors.diagnostics.errorBackground,
+    errorForeground = colors.diagnostics.errorForeground,
+    warningBackground = colors.diagnostics.warningBackground,
+    warningForeground = colors.diagnostics.warningForeground,
+    infoBackground = colors.diagnostics.infoBackground,
+    infoForeground = colors.diagnostics.infoForeground,
+    hintBackground = colors.diagnostics.debugBackground,
+    hintForeground = colors.diagnostics.debugForeground,
   }
 
   cs.terminal = {
@@ -217,7 +206,7 @@ M.get = function(filter)
     red = colors.red,
     green = colors.green,
     yellow = colors.yellow,
-    blue = colors.orange,
+    orange = colors.orange,
     magenta = colors.purple,
     cyan = colors.blue,
     white = colors.text,

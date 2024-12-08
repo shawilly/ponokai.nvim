@@ -52,8 +52,8 @@ function M.get(c, _, _)
       bg = c.editorInlayHint.background,
       fg = c.editorInlayHint.foreground,
     },
-    LspReferenceRead = { bg = c.editor.wordHighlightBackground },
-    LspReferenceText = { bg = c.editor.selectionHighlightBackground },
+    LspReferenceRead = { bg = c.editor.wordHighlightBackground, italic = true, bold = true },
+    LspReferenceText = { bg = c.editor.selectionHighlightBackground, bold = true, italic = true },
     LspReferenceWrite = { bg = c.editor.wordHighlightStrongBackground },
   }
 end

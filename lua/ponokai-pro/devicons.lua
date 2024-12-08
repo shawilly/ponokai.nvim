@@ -34,25 +34,25 @@ M.setup = function(c)
     },
     [".gitattributes"] = {
       icon = "󰊢",
-      color = c.base.blue,
+      color = c.base.orange,
       cterm_color = "59",
       name = "GitAttributes",
     },
     [".gitconfig"] = {
       icon = "󰊢",
-      color = c.base.blue,
+      color = c.base.orange,
       cterm_color = "59",
       name = "GitConfig",
     },
     [".gitignore"] = {
       icon = "󰊢",
-      color = c.base.blue,
+      color = c.base.orange,
       cterm_color = "59",
       name = "GitIgnore",
     },
     [".gitmodules"] = {
       icon = "󰊢",
-      color = c.base.blue,
+      color = c.base.orange,
       cterm_color = "59",
       name = "GitModules",
     },
@@ -262,7 +262,7 @@ M.setup = function(c)
     },
     ["xml"] = {
       icon = "󰅴",
-      color = c.base.blue,
+      color = c.base.orange,
       cterm_color = "173",
       name = "Xml",
     },
@@ -286,7 +286,7 @@ M.setup = function(c)
     },
     ["go.mod"] = {
       icon = "",
-      color = c.base.blue,
+      color = c.base.orange,
       cterm_color = "197",
       name = "GoMod",
     },

@@ -108,6 +108,14 @@
 ---@field text_added HexColor
 ---@field text_changed HexColor
 ---@field text_deleted HexColor
+---@field addedResourceForeground HexColor
+---@field conflictingResourceForeground HexColor
+---@field deletedResourceForeground HexColor
+---@field ignoredResourceForeground HexColor
+---@field modifiedResourceForeground HexColor
+---@field stageDeletedResourceForeground HexColor
+---@field stageModifiedResourceForeground HexColor
+---@field untrackedResourceForeground HexColor
 
 ---@class RGB
 ---@field r number A number between 0 and 255

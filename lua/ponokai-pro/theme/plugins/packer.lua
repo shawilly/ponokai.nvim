@@ -3,8 +3,8 @@ local M = {}
 --- @param c Colorscheme The color palette
 function M.get(c, _, _)
   return {
-    packerString = { fg = c.base.blue },
-    packerHash = { fg = c.base.blue },
+    packerString = { fg = c.base.orange },
+    packerHash = { fg = c.base.orange },
     packerOutput = { fg = c.base.yellow },
     packerRelDate = { fg = c.base.magenta },
     packerSuccess = { fg = c.base.green },

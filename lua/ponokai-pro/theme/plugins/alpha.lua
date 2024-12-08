@@ -4,7 +4,7 @@ local M = {}
 function M.get(c, _, _)
   return {
     AlphaButton = { fg = c.base.magenta },
-    AlphaFooter = { fg = c.base.blue },
+    AlphaFooter = { fg = c.base.orange },
     AlphaHeader = { fg = c.base.yellow },
   }
 end

@@ -6,7 +6,7 @@ function M.get(c, _, _)
     TSRainbowRed = { fg = c.base.red },
     TSRainbowYellow = { fg = c.base.yellow },
     TSRainbowBlue = { fg = c.base.cyan },
-    TSRainbowOrange = { fg = c.base.blue },
+    TSRainbowOrange = { fg = c.base.orange },
     TSRainbowGreen = { fg = c.base.green },
     TSRainbowViolet = { fg = c.base.magenta },
     TSRainbowCyan = { fg = c.base.cyan },

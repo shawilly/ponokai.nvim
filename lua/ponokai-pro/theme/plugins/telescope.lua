@@ -50,7 +50,7 @@ function M.get(c, config, hp)
       fg = c.editorHoverWidget.background,
     },
     TelescopeMatching = {
-      fg = c.base.blue,
+      fg = c.base.orange,
       bold = true,
     },
 

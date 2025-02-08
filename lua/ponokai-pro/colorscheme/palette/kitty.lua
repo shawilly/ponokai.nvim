@@ -45,5 +45,13 @@ return {
     text_added = "#7cc06c",
     text_changed = "#43b5e6",
     text_deleted = "#d46666",
+    addedResourceForeground = "#4caf50",
+    conflictingResourceForeground = "#e5bf3d",
+    deletedResourceForeground = "#d45757",
+    ignoredResourceForeground = "#9e9e9e",
+    modifiedResourceForeground = "#89cefc",
+    stageDeletedResourceForeground = "#d45757",
+    stageModifiedResourceForeground = "#03a9f4",
+    untrackedResourceForeground = "#8bc34a",
   },
 }
